@@ -1,0 +1,100 @@
+MessageValueBlock {
+    layout: vertical;
+    min-width: 100%;
+    min-height: 100%;
+    height: auto;
+    border: solid red;
+    padding: 0 1 0 1;
+}
+
+SignalValueBlock {
+    layout: horizontal;
+    background: rgba(255, 0, 0, 0.3);
+    min-width: 100%;
+    border: solid white;
+    margin: 0;
+    padding: 0;
+}
+
+Button {
+    min-width: 3;
+    width: 8;
+    padding: 0 1;
+    height: 1;
+    text-style: bold;
+    text-align: center;
+    box-sizing: content-box;
+}
+
+#container {
+    layout: vertical;
+    max-width: 100vw;
+    max-height: 100vh;
+    padding: 1;
+}
+
+#header-container {
+    layout: horizontal;
+    max-width: 100vw;
+    background: rgba(100, 98, 98, 0.4);
+    max-height: 3;
+    height: auto;
+    padding: 1 2 1 2;
+    box-sizing: content-box;
+}
+
+#signals-container {
+    layout: vertical;
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+
+#val-container {
+    layout: horizontal;
+    padding: 0;
+    margin: 0;
+    min-width: 30;
+    width: auto;
+    height: auto;
+    box-sizing: border-box;
+    dock: right;
+}
+
+#frame-name,
+#frame-id,
+#signal-label {
+    max-width: 20;
+    text-style: bold;
+}
+
+#frame-name {
+    align: left middle;
+}
+
+#frame-id {
+    align: center middle;
+}
+
+#signal-value {
+    max-width: 10;
+    text-style: bold;
+    text-align: center;
+    align-vertical: middle;
+    padding: 1 0;
+}
+
+#send-btn {
+    width: 15;
+    height: auto;
+    dock: right;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#signal-minus-btn {}
+
+#signal-plus-btn {}
+
+.sig-child {}

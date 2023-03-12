@@ -1,0 +1,54 @@
+VERSION ""
+
+
+NS_ :
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_:
+VAL_TABLE_ Speed 4095 "Invalid" ;
+VAL_TABLE_ High_Beam_State 2 "Low Beam (old implementation)" 3 "Invalid" 1 "High Beam" 0 "Low Beam" ;
+VAL_TABLE_ Yaw_Rate 2048 "Invalid" ;
+VAL_TABLE_ Binary_Signal_State 3 "Invalid" 1 "On" 0 "Off" ;
+
+
+BO_ 1360 MEcommon: 8 Vector__XXX
+ SG_ Yaw_Rate : 27|12@1- (0.05,0) [-100|100] "deg/s" Vector__XXX
+ SG_ Wiper : 23|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Brake : 21|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Blinker_Left : 19|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Blinker_Right : 17|2@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ Speed : 3|12@1+ (0.1,0) [0|409.5] "kph" Vector__XXX
+ SG_ High_Beam : 0|2@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 123 Speed: 16 Vector__XXX
+ SG_ Speed_signal : 9|5@1- (1,0) [0|0] "" Vector__XXX
+
